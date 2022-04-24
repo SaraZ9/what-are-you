@@ -1,0 +1,35 @@
+<%- include("header") -%>
+<h1>Please Insert Your Name</h1>
+<form class="" action="/" method="post">
+  <label for="">Your Name</label>
+  <input type="text" name="nameInput" value="">
+  <button type="submit" name="button" value="submit">Submit</button>
+</form>
+
+
+<% if(randomNums.length !== 0){ %>
+<div class="container result">
+  <h1>What is <%= name %>:</h1>
+  <h2>
+    <%= randomNums[0] %>% of <%= randomWord[0] %>,
+    <%= randomNums[1] %>% of <%= randomWord[1] %> and
+    <%= randomNums[2] %>% of <%= randomWord[2] %>.
+  </h2>
+</div>
+<div class="container result">
+
+  <h1>You will have a great life if you listen to Kanye West:</h1>
+  <h2><%= kanyeQuote %></h2>
+
+  <form class="" action="/" method="post">
+    <button type="submit" name="buttom" value="clear">Clear Screen</button>
+  </form>
+</div>
+
+
+<% } %>
+
+
+
+
+<%- include("footer") -%>
